@@ -3,11 +3,12 @@
     padding: 0;
 }
 
-body {
+.background {
     background: url(../Images/pitch.jpg) no-repeat center;
+    background-color: navy;
 }
 
-header {
+.score-board {
     background-color: rgba(0, 0, 0, .7);
     margin: 2.5rem auto;
     height: 4rem;
