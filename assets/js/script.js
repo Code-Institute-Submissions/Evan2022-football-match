@@ -17,9 +17,14 @@ let integer = 0;
 const cards = document.querySelectorAll(".card");
 cards.forEach((card) => {
     card.addEventListener("click", () => {
+    if (card.classList.contains("selected")) {
+        return;
+    } else {
         card.classList.add("selected");
         integer++;
         score.innerHTML = integer;
+    }
+
 
         if (counter === 0) {
             firstSelection = card.getAttribute("team");
