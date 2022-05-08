@@ -35,7 +35,19 @@ cards.forEach((card) => {
                 correctSelection[1].classList.add("correct");
                 correctSelection[0].classList.remove("selected");
                 correctSelection[1].classList.remove("selected");
-            };
+            } else {
+                let incorrectCards = document.querySelectorAll(".selected");
+
+                incorrectCards[0].classList.add("incorrect");
+                incorrectCards[1].classList.add("incorrect");
+
+                setTimeout(() => {
+                    incorrectCards[0].classList.remove("incorrect");
+                    incorrectCards[1].classList.remove("incorrect");
+                    incorrectCards[0].classList.remove("selected");
+                    incorrectCards[1].classList.remove("selected");
+                }, 900);
+            }
 
         };
     })
