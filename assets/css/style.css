@@ -72,11 +72,11 @@ body {
     background-color: rgba(0, 255, 15, 0.7);
     transform: scale(1.03);
     box-shadow: 0 2px 4px rgba(0, 0, 0, .7);
-    animation: disappear 0.8s;
+    animation: spin 0.8s;
     animation-delay: 0.5s;
 }
 
-@keyframes disappear {
+@keyframes spin {
     from {
         transform:rotate(0deg);
     }
@@ -85,11 +85,13 @@ body {
     }
 }
   
-
 .correct img {
     opacity: 1;
 }
 
+.incorrect {
+    background-color: rgba(240, 3, 3, .7);
+}
 
 .card:hover {
     background-color: rgba(0, 0, 0, .9);

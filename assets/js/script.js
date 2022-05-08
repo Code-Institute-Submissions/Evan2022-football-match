@@ -13,11 +13,15 @@ if (button && grid) {
 let counter = 0; 
 let firstSelection = "";
 let secondSelecton = "";
+let score = document.getElementById("score");
+let integer = 0;
 
 const cards = document.querySelectorAll(".card");
 cards.forEach((card) => {
     card.addEventListener("click", () => {
         card.classList.add("selected");
+        integer++;
+        score.innerHTML = integer;
 
         if (counter === 0) {
             firstSelection = card.getAttribute("team");
@@ -46,7 +50,7 @@ cards.forEach((card) => {
                     incorrectCards[1].classList.remove("incorrect");
                     incorrectCards[0].classList.remove("selected");
                     incorrectCards[1].classList.remove("selected");
-                }, 900);
+                }, 1000);
             }
 
         };
