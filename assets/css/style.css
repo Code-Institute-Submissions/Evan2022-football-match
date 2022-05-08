@@ -15,12 +15,25 @@ body {
 }
 
 .score-board {
-    background-color: rgba(0, 0, 0, .7);
     margin: 2.5rem auto;
     height: 4rem;
     width: 630px; 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.score-btns { 
+    border: 1px solid white;
+    padding: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: transparent;
+    font-size: 1rem;
+}
+
+.score-btns button {
+    background-color: rgba(0, 0, 0, .3);
 }
 
 .grid { 
@@ -70,14 +83,20 @@ body {
     margin: 10px;
     padding: 5px;
     background-color: rgba(0, 0, 0, .3);
-    border: 2px solid white;
-    font-size: 1.3rem;
+    border: 1px solid white;
+    font-size: 1rem;
     color: white;
     border-radius: 10px;
     letter-spacing: 2px;
 }
 
 .home-btns:hover {
+    transform: scale(1.03);
+    background-color: rgba(0, 0, 0, .7);
+    cursor: pointer;
+}
+
+.score-hover:hover {
     transform: scale(1.03);
     background-color: rgba(0, 0, 0, .7);
     cursor: pointer;
