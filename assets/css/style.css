@@ -88,6 +88,7 @@ body {
     color: white;
     border-radius: 10px;
     letter-spacing: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .7);
 }
 
 .home-btns:hover {
@@ -100,4 +101,6 @@ body {
     transform: scale(1.03);
     background-color: rgba(0, 0, 0, .7);
     cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .7);
+    
 }
