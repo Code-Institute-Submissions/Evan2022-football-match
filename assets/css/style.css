@@ -64,6 +64,14 @@ body {
     opacity: 0;
 }
 
+.card.selected img {
+    opacity: 1;
+}
+
+.correct {
+    background-color: rgba(0, 255, 15, 0.7);
+}
+
 
 .card:hover {
     background-color: rgba(0, 0, 0, .9);

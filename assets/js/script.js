@@ -18,6 +18,24 @@ const cards = document.querySelectorAll(".card");
 cards.forEach((card) => {
     card.addEventListener("click", () => {
         card.classList.add("selected");
+
+        if (counter === 0) {
+            firstSelection = card.getAttribute("team");
+            counter++;
+        } else {
+            secondSelecton = card.getAttribute("team");
+            counter = 0;
+
+            if (firstSelection === secondSelecton) {
+                let correctSelection = document.querySelectorAll(
+                    ".card[team='" + firstSelection + "']"
+                );
+
+                correctSelection[0].classList.add("correct");
+                correctSelection[1].classList.add("correct");
+            };
+
+        };
     })
     
 });
