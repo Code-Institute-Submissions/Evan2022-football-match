@@ -1,13 +1,11 @@
 // shuffle cards based on a button click.
-let button = document.querySelector(".shuffle");
 let grid = document.querySelector(".grid");
-
-if (button && grid) {
-  button.addEventListener("click", () => {
+window.onload = shuffle;
+ 
+function shuffle(){
     for (var i = grid.children.length; i >= 0; i--) {
         grid.appendChild(grid.children[Math.random() * i | 0]);
     }
-  });
 }
 
 let counter = 0; 
