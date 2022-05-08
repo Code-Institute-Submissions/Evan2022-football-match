@@ -70,6 +70,24 @@ body {
 
 .correct {
     background-color: rgba(0, 255, 15, 0.7);
+    transform: scale(1.03);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .7);
+    animation: disappear 0.8s;
+    animation-delay: 0.5s;
+}
+
+@keyframes disappear {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+  
+
+.correct img {
+    opacity: 1;
 }
 
 

@@ -33,6 +33,8 @@ cards.forEach((card) => {
 
                 correctSelection[0].classList.add("correct");
                 correctSelection[1].classList.add("correct");
+                correctSelection[0].classList.remove("selected");
+                correctSelection[1].classList.remove("selected");
             };
 
         };
