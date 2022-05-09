@@ -25,7 +25,6 @@ cards.forEach((card) => {
         score.innerHTML = integer;
     }
 
-
         if (counter === 0) {
             firstSelection = card.getAttribute("team");
             counter++;
@@ -54,6 +53,7 @@ cards.forEach((card) => {
                     incorrectCards[0].classList.remove("selected");
                     incorrectCards[1].classList.remove("selected");
                 }, 1000);
+
             }
 
         };
