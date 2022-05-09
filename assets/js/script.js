@@ -6,7 +6,7 @@ function shuffle(){
     for (var i = grid.children.length; i >= 0; i--) {
         grid.appendChild(grid.children[Math.random() * i | 0]);
     }
-}
+};
 
 let counter = 0; 
 let firstSelection = "";
@@ -41,6 +41,15 @@ cards.forEach((card) => {
                 correctSelection[1].classList.add("correct");
                 correctSelection[0].classList.remove("selected");
                 correctSelection[1].classList.remove("selected");
+
+                let correctAnswers = document.querySelectorAll(".correct");
+                console.log(correctAnswers.length);
+                if (correctAnswers.length === 16) {
+                    setTimeout(function () {
+                        alert("YOU WON");
+                    },2000);
+                };
+
             } else {
                 let incorrectCards = document.querySelectorAll(".selected");
 
