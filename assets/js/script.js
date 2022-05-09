@@ -44,8 +44,8 @@ cards.forEach((card) => {
 
                 let correctAnswers = document.querySelectorAll(".correct");
                 if (correctAnswers.length === 16) {
-                    setTimeout(function redirect() {
-                        window.location.href("https://8000-evan2022-footballmatch-92pqwojjxvu.ws-eu44.gitpod.io/end.html");
+                    setTimeout(function () {
+                        window.location.replace("https://8000-evan2022-footballmatch-92pqwojjxvu.ws-eu44.gitpod.io/end.html");
                     },2000);
                 };
 
