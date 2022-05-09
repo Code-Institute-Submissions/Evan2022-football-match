@@ -45,6 +45,8 @@ cards.forEach((card) => {
                 let correctAnswers = document.querySelectorAll(".correct");
                 if (correctAnswers.length === 16) {
                     setTimeout(function () {
+                        console.log(integer);
+                        localStorage.setItem("mostRecentScore", integer);
                         window.location.replace("https://8000-evan2022-footballmatch-92pqwojjxvu.ws-eu44.gitpod.io/end.html");
                     },2000);
                 };
@@ -68,3 +70,12 @@ cards.forEach((card) => {
     });
     
 });
+
+//End page JS
+
+const username = document.getElementById("username");
+const saveScoreBtn = document.getElementById("saveScoreBtn");
+const finalScore = document.getElementById("final-score");
+const mostRecentScore = localStorage.getItem("mostRecentScore");
+
+finalScore.innerText = mostRecentScore;
