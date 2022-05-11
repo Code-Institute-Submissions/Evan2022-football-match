@@ -8,22 +8,30 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 </head>
-<body>
+<body id="end-background">
     <div>
+        <h1><em>YOU SCORED: </em><span id="final-score">0</span></h1>
         <div>
-            <h1><em>CONGRATULATIONS! YOU SCORED: </em><span id="final-score">0</span></h1>
+            <form>
+                <div>
+                    <input type="text" name="username" id="username" placeholder="username">
+                </div>
+                <div>
+                    <button type="submit" id="save-score" class="home-btns">SAVE</button>
+                </div>
+            </form>
         </div>
         <div>
-
+            <a href="game.html">
+                <button class="home-btns">PLAY AGAIN</button>
+            </a>
         </div>
         <div>
-
-        </div>
-        <div>
-
+            <a href="index.html">
+                <button class="home-btns">HOME</button>
+            </a>
         </div>
     </div>
-
 <script src="./assets/js/script.js"></script>
 </body>
 </html>

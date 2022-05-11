@@ -137,6 +137,32 @@ h1 {
     font-family: 'Open Sans', sans-serif;
 }
 
+input {
+    background-color: white;
+    text-align: center;
+    width: 280px;
+    border: 1px solid white;
+    height: 80px;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px;
+    letter-spacing: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .7);
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color: black;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+::placeholder:hover {
+    background-color: white;
+    cursor: text;
+    color: white;
+}
+
 .home-btns:hover {
     transform: scale(1.03);
     background-color: rgba(0, 0, 0, .7);
@@ -149,4 +175,14 @@ h1 {
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .7);
     
+}
+
+#end-background {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background-color: navy;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
