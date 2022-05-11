@@ -9,23 +9,59 @@ body {
     font-family: 'Open Sans', sans-serif; 
 }
 
-.background {
+h1 {
+    font-size: 5rem;
+    margin-bottom: 4rem;
+    letter-spacing: 3px;
+    color: white;
+    font-weight: 500;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, .7); 
+    font-family: 'Fredoka One', cursive;
+}
+
+/* Page Images */
+
+.game-background {
     background: url(../Images/pitch.jpg) no-repeat center;
     background-color: navy;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
-#menu-background {
+.menu-background {
     height: 100vh;
+    width: 100%;
     text-align: center;
     background: url(../Images/stadiumout.jpg) no-repeat center;
     background-color: navy;
     display: flex;
     justify-content: center;
     flex-direction: column;
-
 }
+
+.score-background {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-color: navy;
+    background: url(../Images/stadiumstand.jpg) no-repeat center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.leaderboard-background {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background: url(../Images/stadiumview.jpg) no-repeat center;
+    background-color: navy;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Game scoreboard */
 
 .score-board {
     margin: 2.5rem auto;
@@ -43,15 +79,16 @@ body {
     color: white;
     background-color: transparent;
     font-size: 1rem;
+    text-decoration: none;
 }
 
 .score-btns button {
     background-color: rgba(0, 0, 0, .3);
 }
 
+/* Game Grid and Cards */
+
 .grid { 
-    width: auto;
-    margin: auto;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(4, 150px);
@@ -113,23 +150,13 @@ body {
     
 }
 
-h1 {
-    font-size: 5rem;
-    margin-bottom: 5rem;
-    letter-spacing: 3px;
-    color: white;
-    font-weight: 500;
-    text-shadow: 0 4px 8px rgba(0, 0, 0, .7); 
-    font-family: 'Fredoka One', cursive;
-    
-}
-
+/* Home btns */
 .home-btns { 
     width: 280px;
     height: 80px;
     margin: 10px;
     padding: 5px;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .7);
     border: 1px solid white;
     font-size: 1.2rem;
     color: white;
@@ -175,27 +202,6 @@ input {
     background-color: rgba(0, 0, 0, .7);
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .7);
-    
-}
-
-#end-background {
-    height: 100vh;
-    width: 100vw;
-    text-align: center;
-    background-color: navy;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.score-container {
-    height: 100vh;
-    width: 100vw;
-    text-align: center;
-    background-color: navy;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .score-list-container {
@@ -223,27 +229,111 @@ input {
     letter-spacing: 3px;
     padding: 10px;
     font-size: 1.2rem;
-
-    
 }
 
 @media screen and (max-width: 700px) {
 
+    h1 {
+        font-size: 4rem;
+    }
+
     .card img {
         height: 130px;
         width: 130px;
+        object-fit: contain;
     }
 
     .grid {
         grid-template-columns: repeat(4, 130px);
-        grid-gap: 5px;
+        grid-gap: 10px;
         margin-top: 4rem;
 
     }
 
     .score-board {
         width: 530px;
-        margin: 4rem;
+        margin: 4rem auto;
+        display: flex;
+        justify-content: space-between;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+
+    .card img {
+        height: 115px;
+        width: 115px;
+        object-fit: contain;
     }
 
-  }
+    .grid {
+        grid-template-columns: repeat(4, 115px);
+        grid-gap: 10px;
+        margin-top: 4rem;
+
+    }
+
+    .score-board {
+        width: 475px;
+        margin: 6rem auto 4rem;
+    }
+
+    .score-btns { 
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .card img {
+        height: 100px;
+        width: 100px;
+        object-fit: contain;
+    }
+
+    .grid {
+        grid-template-columns: repeat(4, 90px);
+        grid-template-rows: repeat(4, 90px);
+
+    }
+
+    .score-board {
+        width: 390px;
+        margin: 6rem auto 4rem;
+    }
+
+    .score-btns { 
+        padding: 10px;
+        font-size: 12px;
+    }
+
+}  
+
+@media screen and (max-width: 500px) {
+
+    .card img {
+        height: 100px;
+        width: 100px;
+        object-fit: contain;
+    }
+
+    .grid {
+        grid-template-columns: repeat(4, 70px);
+        grid-template-rows: repeat(4, 70px);
+        grid-gap: 5px;
+
+    }
+
+    .score-board {
+        width: 300px;
+        margin: 6rem auto 4rem;
+    }
+
+    .score-btns { 
+        padding: 10px;
+        font-size: 12px;
+    }
+
+}  
