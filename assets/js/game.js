@@ -1,3 +1,5 @@
+// followed https://www.youtube.com/watch?v=B6aJpbX_IZU&list=LL&index=2 for base of the project and improved on the code, fixing errors and adding score board, random card position.
+
 let counter = 0; 
 let firstSelection = "";
 let secondSelecton = "";
