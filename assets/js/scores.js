@@ -25,10 +25,10 @@ saveHighScore = e => {
     highScores.splice(10);
 
     localStorage.setItem("highScores", JSON.stringify(highScores));
-
     saveScoreBtn.addEventListener("click", () => {
         window.location.replace("leaderboard.html");
-    })
+    });
+
 
 };
 

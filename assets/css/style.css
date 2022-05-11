@@ -214,6 +214,7 @@ input {
     list-style-type: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .7);
     margin: 10px;
+    width: 280px;
 }
 
 #high-scores-list li {
