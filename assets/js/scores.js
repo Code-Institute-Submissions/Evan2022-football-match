@@ -4,7 +4,7 @@ const finalScore = document.getElementById("final-score");
 const mostRecentScore = localStorage.getItem("mostRecentScore");
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
-const MAX_HIGH_SCORES = 10;
+const MAX_HIGH_SCORES = 8;
 
 finalScore.innerText = mostRecentScore;
 
@@ -22,14 +22,13 @@ saveHighScore = e => {
 
     highScores.push(score);
     highScores.sort( (a,b) => a.score - b.score);
-    highScores.splice(10);
+    highScores.splice(8);
 
     localStorage.setItem("highScores", JSON.stringify(highScores));
-    saveScoreBtn.addEventListener("click", () => {
-        window.location.replace("leaderboard.html");
-    });
 
 
 };
 
-
+saveScoreBtn.addEventListener("click", () => {
+    window.location.replace("leaderboard.html");
+});
