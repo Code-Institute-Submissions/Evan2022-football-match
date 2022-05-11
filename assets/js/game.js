@@ -47,7 +47,7 @@ cards.forEach((card) => {
                     setTimeout(function () {
                         console.log(integer);
                         localStorage.setItem("mostRecentScore", integer);
-                        window.location.replace("https://8000-evan2022-footballmatch-92pqwojjxvu.ws-eu44.gitpod.io/scores.html");
+                        window.location.replace("scores.html");
                     },2000);
                 };
 
