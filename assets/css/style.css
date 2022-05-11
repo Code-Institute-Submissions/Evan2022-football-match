@@ -420,3 +420,79 @@ input {
         width: 280px;
     }
 }  
+
+@media screen and (max-width: 450px) {
+
+    h1 { 
+        font-size: 2.5rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(4, 70px);
+        grid-template-rows: repeat(4, 70px);
+        grid-gap: 3px;
+        margin-top: 2rem;
+
+    }
+
+    .score-board {
+        width: 300px;
+        margin: 1rem auto 1rem;
+    }
+
+    .score-btns { 
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .game-text { 
+        margin: 0 auto;
+        font-size: 10px;
+        width: 280px;
+    }
+
+    .game-background {
+        background-size: auto;
+        height: 100%;
+        width: 100%;
+    }
+
+    .score-background {
+        background-size: auto;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .leaderboard-background {
+        background-size: auto;
+        height: 100%;
+        width: 100%;
+    }
+
+    #high-scores-list {
+        margin: 5px;
+        width: 220px;
+    }
+    
+    #high-scores-list li {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .home-btns { 
+        width: 220px;
+        height: 40px;
+        margin: 10px;
+        padding: 5px;
+        font-size: 12px;
+        color: white;
+    }
+
+    input {
+        width: 220px;
+        height: 40px;
+        font-size: 12px;
+        margin: 10px;
+        letter-spacing: 3px;
+    }
+}  
