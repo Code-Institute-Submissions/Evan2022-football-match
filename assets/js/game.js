@@ -11,7 +11,7 @@ function shuffle(){
     for (var i = grid.children.length; i >= 0; i--) {
         grid.appendChild(grid.children[Math.random() * i | 0]);
     }
-};
+}
 
 
 const cards = document.querySelectorAll(".card");
@@ -49,7 +49,7 @@ cards.forEach((card) => {
                         localStorage.setItem("mostRecentScore", integer);
                         window.location.replace("scores.html");
                     },2000);
-                };
+                }
 
             } else {
                 let incorrectCards = document.querySelectorAll(".selected");
@@ -64,9 +64,9 @@ cards.forEach((card) => {
                     incorrectCards[1].classList.remove("selected");
                 }, 1000);
 
-            };
+            }
 
-        };
+        }
     });
     
 });
