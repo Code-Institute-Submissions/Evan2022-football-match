@@ -28,15 +28,15 @@ cards.forEach((card) => {
     }
 
         if (counter === 0) {
-            firstSelection = card.getAttribute("team");
+            firstSelection = card.getAttribute("data-team");
             counter++;
         } else {
-            secondSelecton = card.getAttribute("team");
+            secondSelecton = card.getAttribute("data-team");
             counter = 0;
 
             if (firstSelection === secondSelecton) {
                 let correctSelection = document.querySelectorAll(
-                    ".card[team='" + firstSelection + "']"
+                    ".card[data-team='" + firstSelection + "']"
                 );
 
                 correctSelection[0].classList.add("correct");
